@@ -1,0 +1,114 @@
+.ModularOne {
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: visible;
+  h2 {
+    font-size: 19px;
+    line-height: 19px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .main {
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+    ._2iS06 {
+      background: no-repeat 50%;
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      margin-right: 15px;
+      border-radius: 3px;
+      position: relative;
+      ._2xsDX {
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+      }
+    }
+    ._25sxI {
+      font-size: 12px;
+      line-height: 20px;
+      height: 20px;
+      border-radius: 10px;
+      padding: 0 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      -webkit-transform: scale(0.8333);
+      transform: scale(0.8333);
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+    }
+    .y0UzV {
+      flex: 1;
+      min-width: 0;
+      .lzHbK {
+        display: flex;
+        h2 {
+          padding: 0;
+          margin: 0;
+          font-size: 15px;
+          line-height: 20px;
+          color: #191919;
+          font-weight: 700;
+          margin-bottom: 15px;
+          flex: 1;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          white-space: normal;
+          word-wrap: break-word;
+        }
+        ._2RKq3 {
+          text-align: right;
+          font-size: 0;
+          margin: 2px 0 0 10px;
+          ._2Jmbn {
+            display: block;
+            font-size: 13px;
+            color: #f97927;
+            margin-bottom: 5px;
+            line-height: 16px;
+            font-weight: 700;
+            ._39aJt {
+              font-size: 11px;
+              -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+              display: inline-block;
+            }
+          }
+          del {
+            font-size: 11px;
+            line-height: 14px;
+            color: #ccc;
+            display: block;
+          }
+        }
+      }
+      i {
+        font-size: 13px;
+        line-height: 13px;
+        color: #818181;
+        display: block;
+        font-style: normal;
+        margin-bottom: 17px;
+      }
+      p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1;
+        color: #818181;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+      }
+    }
+  }
+}
