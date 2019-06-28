@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "dva";
 import Swiper from "swiper";
+import { Link } from "dva/router";
 
 import "swiper/dist/css/swiper.min.css";
 import "./Banner.scss";
@@ -14,23 +15,28 @@ export default connect(state => {
       navlist: [
         {
           title: "青椒学院",
-          picpath: require("../../../../assets/qj.svg")
+          picpath: require("../../../../assets/qj.svg"),
+          linkpath: "/"
         },
         {
           title: "时间发现",
-          picpath: require("../../../../assets/time.svg")
+          picpath: require("../../../../assets/time.svg"),
+          linkpath: "/"
         },
         {
           title: "全部专栏",
-          picpath: require("../../../../assets/all.svg")
+          picpath: require("../../../../assets/all.svg"),
+          linkpath: "/collection/26"
         },
         {
           title: "签到",
-          picpath: require("../../../../assets/qiandao.svg")
+          picpath: require("../../../../assets/qiandao.svg"),
+          linkpath: "/"
         },
         {
           title: "我的",
-          picpath: require("../../../../assets/mine.svg")
+          picpath: require("../../../../assets/mine.svg"),
+          linkpath: "/"
         }
       ]
     };
@@ -54,8 +60,10 @@ export default connect(state => {
             {this.state.navlist.map((item, index) => {
               return (
                 <li key={index}>
-                  <img src={item.picpath} alt="" />
-                  <p>{item.title}</p>
+                  <Link to={item.linkpath}>
+                    <img src={item.picpath} alt="" />
+                    <p>{item.title}</p>
+                  </Link>
                 </li>
               );
             })}

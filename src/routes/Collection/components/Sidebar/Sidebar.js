@@ -19,22 +19,22 @@ export default connect(state => {
           {this.state.navok
             ? this.state.navlist.map((item, index) => {
                 return (
-                  <Link
-                    to={`${this.props.url}/${item.id}`}
+                  <div
+                    className={
+                      this.state.topicId === item.id ||
+                      this.props.example.topicId === item.id
+                        ? "list light"
+                        : "list"
+                    }
                     key={index}
-                    onClick={this.changeid.bind(this, item.id, item.title)}
                   >
-                    <div
-                      className={
-                        this.state.topicId === item.id ||
-                        this.props.example.topicId === item.id
-                          ? "list light"
-                          : "list"
-                      }
+                    <Link
+                      to={`${this.props.url}/${item.id}`}
+                      onClick={this.changeid.bind(this, item.id, item.title)}
                     >
                       <span>{item.title}</span>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 );
               })
             : ""}
